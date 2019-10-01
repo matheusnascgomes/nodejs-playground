@@ -1,1 +1,16 @@
-[{"id":"1","title":"A Book","imageUrl":"https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg","description":"This is an awesome book!","price":"19"},{"title":"MacBook Pro","imageUrl":"https://http2.mlstatic.com/apple-macbook-pro-2019-i7-26ghz-16gb-256ssd-mv902-mv922-15p-D_NQ_NP_841029-MLB31654707708_082019-O.webp","description":"Muito foda","price":"10000","id":"0.474552737803692"}]
+[
+  {
+    "id": "1",
+    "title": "A Book",
+    "imageUrl": "https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg",
+    "description": "This is an awesome book!",
+    "price": "19"
+  },
+  {
+    "title": "MacBook Pro",
+    "imageUrl": "https://http2.mlstatic.com/apple-macbook-pro-2019-i7-26ghz-16gb-256ssd-mv902-mv922-15p-D_NQ_NP_841029-MLB31654707708_082019-O.webp",
+    "description": "Muito foda",
+    "price": "10000",
+    "id": "0.474552737803692"
+  }
+]
