@@ -62,6 +62,8 @@ exports.addToCart = (req, res, _) => {
     body: { productId }
   } = req;
   Product.findById(productId, product => {
-    Cart.addNewProduct(product);
+    Cart.addNewProduct(productId, product.price, () => {
+      res.end();
+    });
   });
 };

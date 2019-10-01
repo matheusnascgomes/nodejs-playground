@@ -18,7 +18,7 @@ const getCartFromFile = cb => {
 };
 
 module.exports = class Cart {
-  static addNewProduct({ id, price }, cb) {
+  static addNewProduct(id, price, cb) {
     getCartFromFile(cart => {
       let cartNewValues = { products: [], totalValue: 0 };
 
@@ -41,10 +41,10 @@ module.exports = class Cart {
         cartNewValues.products = [...cartNewValues.products, updatedProduct];
       }
 
-      updatedProduct.totalValue = updatedProduct.totalValue + +price;
+      cartNewValues.totalValue = cartNewValues.totalValue + +price;
 
-      fs.writeFile(cartStoragePath, JSON.stringify(updatedProduct), err => {
-        console.log("Finished", err);
+      fs.writeFile(cartStoragePath, JSON.stringify(cartNewValues), err => {
+        cb();
       });
     });
   }
